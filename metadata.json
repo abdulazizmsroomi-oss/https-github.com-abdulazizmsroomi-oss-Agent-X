@@ -1,0 +1,6 @@
+{
+  "name": "Agent X - Autonomous GRC & Cybersecurity Enterprise Platform",
+  "description": "Enterprise autonomous human-in-the-loop Governance, Risk, and Compliance (GRC) and Cybersecurity platform featuring dual Arabic/English interface, multi-agent advisory board, voice navigation, local air-gapped reasoning, Saudi national & international framework mapping, and cryptographic audit trails.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

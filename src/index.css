@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  
+  body.light, :root:not(.dark) body, html:not(.dark) body {
+    background-color: #F4F7FC;
+    color: #0f172a;
+  }
+
+  body.dark, html.dark body {
+    background-color: #060B18;
+    color: #f8fafc;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Authentic Colorful Graffiti Fonts */
+  .font-graffiti {
+    font-family: 'Sedgwick Ave', 'Sedgwick Ave Display', 'Permanent Marker', cursive;
+    letter-spacing: 0.04em;
+  }
+
+  .font-graffiti-special {
+    font-family: 'Permanent Marker', 'Sedgwick Ave', 'Rubik Dirt', cursive;
+    letter-spacing: 0.06em;
+    display: inline-block;
+  }
+
+  .font-graffiti-tag {
+    font-family: 'Rock Salt', 'Sedgwick Ave', cursive;
+  }
+
+  /* Vibrant Colorful Graffiti Text Styles */
+  .graffiti-text-colorful {
+    background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 25%, #06b6d4 50%, #10b981 75%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 2px 0px rgba(0, 0, 0, 0.9));
+  }
+
+  .graffiti-agent-x-rainbow {
+    background: linear-gradient(90deg, #ff007f 0%, #ff5500 18%, #facc15 36%, #06b6d4 56%, #10b981 76%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 8px rgba(6, 182, 212, 0.4));
+  }
+
+  .graffiti-badge-colorful {
+    background: linear-gradient(135deg, #f43f5e, #8b5cf6, #06b6d4, #10b981);
+  }
+
+  /* LIGHT MODE CYAN GREEN Frames */
+  .frame-cyan-green {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #14b8a6;
+    box-shadow: 0 2px 10px -2px rgba(20, 184, 166, 0.15), 0 0 0 1px rgba(6, 182, 212, 0.15);
+    background-color: #ffffff;
+  }
+
+  .frame-cyan-green-glow {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #10b981;
+    box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.25), 0 0 0 1px rgba(6, 182, 212, 0.2);
+    background-color: #ffffff;
+  }
+
+  /* DARK MODE NEON GRC DASHBOARD THEME (from attached mockup) */
+  html.dark .frame-cyan-green,
+  .dark .frame-cyan-green {
+    background-color: #0c1527;
+    border-color: #06b6d4;
+    box-shadow: 0 0 18px -2px rgba(6, 182, 212, 0.3), 0 0 0 1px rgba(16, 185, 129, 0.2);
+  }
+
+  html.dark .frame-cyan-green-glow,
+  .dark .frame-cyan-green-glow {
+    background-color: #0c1527;
+    border-color: #10b981;
+    box-shadow: 0 0 22px -2px rgba(16, 185, 129, 0.35), 0 0 0 1px rgba(6, 182, 212, 0.3);
+  }
+
+  /* Specific Neon Color Cards from attached screenshot */
+  .card-neon-cyan {
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 16px -2px rgba(0, 240, 255, 0.35);
+  }
+
+  .card-neon-orange {
+    border: 2px solid #ff6b00;
+    box-shadow: 0 0 16px -2px rgba(255, 107, 0, 0.35);
+  }
+
+  .card-neon-purple {
+    border: 2px solid #a855f7;
+    box-shadow: 0 0 16px -2px rgba(168, 85, 247, 0.35);
+  }
+
+  .card-neon-blue {
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 16px -2px rgba(56, 189, 248, 0.35);
+  }
+
+  .card-neon-emerald {
+    border: 2px solid #10b981;
+    box-shadow: 0 0 16px -2px rgba(16, 185, 129, 0.35);
+  }
+}
+
+/* Custom crisp scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 184, 166, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.7);
+}
